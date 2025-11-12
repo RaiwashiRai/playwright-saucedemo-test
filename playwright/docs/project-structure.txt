@@ -1,0 +1,36 @@
+my-playwright-portfolio/
+├─ tests/                  # All your test specs
+│  ├─ functional/          # Functional UI tests (DemoQA)
+│  │  ├─ textBox.spec.ts
+│  │  ├─ buttons.spec.ts
+│  │  ├─ checkbox.spec.ts
+│  │  └─ dropdown.spec.ts
+│  ├─ e2e/                 # End-to-End workflows (Swag Labs)
+│  │  └─ checkout.spec.ts
+│  ├─ negative/            # Negative test cases
+│  │  ├─ loginNegative.spec.ts
+│  │  └─ formNegative.spec.ts
+│  ├─ visual/              # Visual validation
+│  │  └─ layout.spec.ts
+│  └─ accessibility/       # Accessibility tests
+│     └─ axe.spec.ts
+│
+├─ pages/                  # Page Object Model (POM)
+│  ├─ demoqa/
+│  │  ├─ textBoxPage.ts
+│  │  ├─ buttonsPage.ts
+│  │  ├─ checkboxPage.ts
+│  │  └─ dropdownPage.ts
+│  └─ swagLabs/
+│     ├─ loginPage.ts
+│     ├─ productPage.ts
+│     └─ checkoutPage.ts
+│
+├─ utils/                  # Helper functions / constants
+│  └─ testUtils.ts
+│
+├─ playwright.config.ts    # Playwright configuration
+├─ package.json
+├─ tsconfig.json
+├─ .gitignore
+└─ README.md
