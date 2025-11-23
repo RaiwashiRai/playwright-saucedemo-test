@@ -1,5 +1,5 @@
 import {Page, Locator} from '@playwright/test';
-import Constants from '../utils/constants/constatns';
+import Constants from '../utils/constants/constants.ts';
 
 export class LoginPage {
 

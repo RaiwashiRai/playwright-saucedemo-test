@@ -1,5 +1,5 @@
 import { test, expect } from './baseTest.ts';
-import Constants from '../../utils/constants/constatns.ts';
+import Constants from '../../utils/constants/constants.ts';
 
 const { 
     validUserNames, 
