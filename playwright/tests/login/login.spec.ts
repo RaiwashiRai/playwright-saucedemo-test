@@ -1,4 +1,4 @@
-import { test, expect } from './baseTest.ts';
+import { test, expect } from '../fixtures/loginPage.fixture.ts';
 import Constants from '../../utils/constants/constants.ts';
 
 const { 
