@@ -52,6 +52,16 @@ export default defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
+    {
+      name: 'slowMo',
+      use: {
+        headless: false, // Set to false to see the browser UI
+        launchOptions: {
+        slowMo: 1000, // Adds a 500ms delay to every action
+        },
+        ...devices['Desktop Chrome'],
+      }
+    },
 
     /* Test against mobile viewports. */
     // {

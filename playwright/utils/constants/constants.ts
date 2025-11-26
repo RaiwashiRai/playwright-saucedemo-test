@@ -10,6 +10,10 @@ const Constants = {
     loginErrorMessages: {
         LOCKED_OUT: 'Epic sadface: Sorry, this user has been locked out.',
         INVALID_CREDENTIALS: 'Epic sadface: Username and password do not match any user in this service'
+    },
+    inventoryItemButtonTexts: {
+        ADD_TO_CART: 'Add to cart',
+        REMOVE: 'Remove'
     }
 };
 
