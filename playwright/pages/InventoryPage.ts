@@ -1,6 +1,4 @@
 import { Page, Locator } from '@playwright/test';
-// Import the CartPage class for navigation and inter-page operations
-import { CartPage } from './CartPage';
 
 /**
  * Defines the structure for an item found on the inventory page.
@@ -22,8 +20,6 @@ export class InventoryPage {
     readonly itemsList: Locator;
     readonly cartLink: Locator;
     readonly cartBadge: Locator;
-    // A private property to hold an instance of the CartPage when needed
-    private cartPage: CartPage;
 
 
     /**
@@ -56,23 +52,6 @@ export class InventoryPage {
      */
     private async gotoCartPage(){
         await this.cartLink.click();
-    }
-
-    /**
-     * Navigates to the cart page and retrieves all items currently present in the cart.
-     * Reuses the parsing logic for consistency.
-     * @returns A promise that resolves to an array of InventoryItem objects currently in the cart.
-     */
-    async getCartItems(): Promise<InventoryItem[]> {
-        await this.gotoCartPage();
-        this.cartPage =  new CartPage(this.page);
-        // Uses the cartItemsList locator from the newly instantiated CartPage object
-        let parsedItems = await this.parseItems(await this.cartPage.cartItemsList.all());
-        await this.page.goBack(); // Navigate back to the inventory page
-        // await this.page.reload(); // Reload to ensure the state is fresh
-
-        return parsedItems
-
     }
 
     /**

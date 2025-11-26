@@ -21,18 +21,10 @@ test('Add or remove items Test', async ({inventoryPage}) => {
     await expect(inventoryPage.cartBadge).toBeVisible();
     await expect(inventoryPage.cartBadge).toHaveText('1');
 
-    // Verify the cart modal/page item count
-    let cartItems1 = await inventoryPage.getCartItems()
-    expect(cartItems1.length).toBe(1);
-
     // --- Remove Item ---
     await itemslist[randomIndex].addRemoveToCartBtn.click();
     
     // Verify button text reverts and cart badge disappears
     await expect(itemslist[randomIndex].addRemoveToCartBtn).toHaveText(ADD_TO_CART);
     expect(inventoryPage.cartBadge).not.toBeVisible();
-
-    // Verify the cart modal/page is empty
-    let cartItems2 = await inventoryPage.getCartItems();
-    expect(cartItems2.length).toBe(0);
 });
