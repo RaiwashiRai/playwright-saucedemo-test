@@ -34,6 +34,8 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
+    
   },
 
   /* Configure projects for major browsers */
@@ -52,16 +54,18 @@ export default defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
-    {
-      name: 'slowMo',
-      use: {
-        headless: false, // Set to false to see the browser UI
-        launchOptions: {
-        slowMo: 1000, // Adds a 500ms delay to every action
-        },
-        ...devices['Desktop Chrome'],
-      }
-    },
+
+    // enable while debugging to see the slowmo effect
+    // {
+    //   name: 'slowMo',
+    //   use: {
+    //     headless: false, // Set to false to see the browser UI
+    //     launchOptions: {
+    //     slowMo: 1000, // Adds a 500ms delay to every action
+    //     },
+    //     ...devices['Desktop Chrome'],
+    //   }
+    // },
 
     /* Test against mobile viewports. */
     // {

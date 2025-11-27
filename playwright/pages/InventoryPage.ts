@@ -50,7 +50,7 @@ export class InventoryPage {
     /**
      * Navigates the browser to the shopping cart page.
      */
-    private async gotoCartPage(){
+    async gotoCartPage(){
         await this.cartLink.click();
     }
 
