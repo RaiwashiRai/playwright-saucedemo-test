@@ -1,5 +1,5 @@
 import { test as base, expect } from './loginPage.fixture.ts';
-import { InventoryPage } from '../../pages/inventoryPage.ts';
+import { InventoryPage } from '../pages/inventoryPage.ts';
 import Constants from '../utils/constants/constants.ts';
 
 
