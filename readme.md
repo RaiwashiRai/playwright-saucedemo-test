@@ -18,7 +18,7 @@ A focused portfolio project featuring clean Page Object–based tests, stable se
 - Configured for CI (GitHub Actions) — see .github/workflows
 
 
-## 🕸️ APIs Used
+## ✅ Application Under Test (AUT)
 - [Swag labs demo website](https://www.saucedemo.com/)
 
 

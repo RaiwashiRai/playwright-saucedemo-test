@@ -1,4 +1,4 @@
-import Constants from '../../utils/constants/constants.ts';
+import Constants from '../utils/constants/constants.ts';
 import {test, expect} from '../fixtures/inventoryPage.fixture.ts';
 
 // Destructure constants for button text to improve readability in assertions
