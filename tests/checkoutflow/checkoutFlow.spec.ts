@@ -1,6 +1,6 @@
 import { test, expect } from '../fixtures/inventoryPage.fixture.ts';
 import Constants from '../../utils/constants/constants.ts';
-import { CartPage } from '../../pages/CartPage.ts';
+import { CartPage } from '../../pages/cartPage.ts';
 import { CheckoutStepOnePage } from '../../pages/checkoutStepOnePage.ts';
 import { CheckoutStepTwoPage } from '../../pages/checkoutStepTwoPage.ts';
 import { CheckoutCompletePage } from '../../pages/checkoutCompletePage.ts';
