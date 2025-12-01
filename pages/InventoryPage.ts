@@ -4,6 +4,7 @@ import { Page, Locator } from '@playwright/test';
  * Defines the structure for an item found on the inventory page.
  * Used for type-safe handling of item data across the Page Object Model.
  */
+
 export interface InventoryItem {
     name: string | null;
     price: string | null;
