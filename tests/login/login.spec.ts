@@ -1,5 +1,5 @@
 import { test, expect } from '../fixtures/loginPage.fixture.ts';
-import Constants from '../utils/constants/constants.ts';
+import Constants from '../../utils/constants/constants.ts';
 
 const { 
     validUserNames, 

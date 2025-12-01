@@ -22,24 +22,6 @@ A focused portfolio project featuring clean Page Object–based tests, stable se
 - [Swag labs demo website](https://www.saucedemo.com/)
 
 
-## 📚 Project Structure
-
-```
-src/
-  test/
-    java/
-      ryu/
-        api/jsonplaceholder/      # API client abstraction
-        tests/jsonplaceholder/    # Test classes (CRUD, Negative, Schema, Smoke, Temp)
-        utils/                    # Config and test data utilities
-    resources/
-      ryu/schemas/               # JSON schemas for validation
-.github/
-  workflows/                     # CI/CD pipeline (GitHub Actions)
-```
-
-
-
 ## 🚀 Tech stack
 - Playwright (TypeScript)
 - Node.js, npm

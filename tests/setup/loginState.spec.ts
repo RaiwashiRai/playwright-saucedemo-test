@@ -1,5 +1,5 @@
 import {test} from '../fixtures/loginPage.fixture.ts';
-import Constants from '../utils/constants/constants.ts';
+import Constants from '../../utils/constants/constants.ts';
 
 test('save login state for standard user', async ({ loginPage }) => {
     await loginPage.login(Constants.validUserNames[0], Constants.PASSWORD);
