@@ -1,9 +1,9 @@
 import { test, expect } from '../fixtures/inventoryPage.fixture.ts';
 import Constants from '../../utils/constants/constants.ts';
 import { CartPage } from '../../pages/CartPage.ts';
-import { CheckoutStepOnePage } from '../../pages/CheckoutStepOnePage.ts';
-import { CheckoutStepTwoPage } from '../../pages/CheckoutStepTwoPage.ts';
-import { CheckoutCompletePage } from '../../pages/CheckoutCompletePage.ts';
+import { CheckoutStepOnePage } from '../../pages/checkoutStepOnePage.ts';
+import { CheckoutStepTwoPage } from '../../pages/checkoutStepTwoPage.ts';
+import { CheckoutCompletePage } from '../../pages/checkoutCompletePage.ts';
 
 const {
     FIRST_NAME,
