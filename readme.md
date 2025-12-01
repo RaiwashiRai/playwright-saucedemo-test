@@ -8,7 +8,7 @@ A focused portfolio project featuring clean Page Object–based tests, stable se
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![CI Ready](https://img.shields.io/badge/CI--Ready-000000)
-![Release](https://img.shields.io/github/v/release/your-username/playwright-saucedemo-test)
+![Release](https://img.shields.io/github/v/release/RaiwashiRai/playwright-saucedemo-test)
 
 
 ⭐ Highlights
