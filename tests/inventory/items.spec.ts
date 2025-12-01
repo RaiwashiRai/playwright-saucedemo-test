@@ -25,5 +25,5 @@ test('Add or remove items Test', async ({inventoryPage}) => {
     
     // Verify button text reverts and cart badge disappears
     await expect(itemslist[randomIndex].addRemoveToCartBtn).toHaveText(ADD_TO_CART);
-    expect(inventoryPage.cartBadge).not.toBeVisible();
+    await expect(inventoryPage.cartBadge).toBeHidden();
 });
